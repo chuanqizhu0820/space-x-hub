@@ -14,6 +14,12 @@ const displayMissions = (missionTab) => {
         <td>
           { missions[i].description }
         </td>
+        <td>
+          <p>NOT A MEMBER</p>
+        </td>
+        <td>
+          <button id={missions[i].mission_id} className="join" type="button">Join Mission</button>
+        </td>
       </tr>,
     );
   }
@@ -34,6 +40,7 @@ export const Missions = () => {
             <th className="mission">Missions</th>
             <th className="description">Description</th>
             <th className="status">Status</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
