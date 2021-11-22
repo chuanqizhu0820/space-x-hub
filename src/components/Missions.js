@@ -33,7 +33,7 @@ export const Missions = () => {
           <tr>
             <th className="mission">Missions</th>
             <th className="description">Description</th>
-            <th>Status</th>
+            <th className="status">Status</th>
           </tr>
         </thead>
         <tbody>

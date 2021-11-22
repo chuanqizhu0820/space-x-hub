@@ -1,6 +1,17 @@
+body {
+  overflow-x: hidden;
+}
+
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid #e1e5e8;
   border-collapse: collapse;
+}
+
+table {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  margin-left: 1.5rem;
 }
 
 tbody {
@@ -8,24 +19,40 @@ tbody {
 }
 
 th {
+  background-color: #fff;
   font-size: 18px;
   font-weight: 700;
 }
 
 .mission {
   width: 9%;
+  padding-right: 3.7rem;
 }
 
 .description {
   width: 70%;
+  padding-right: 62rem;
+}
+
+.status {
+  padding-right: 16.3rem;
 }
 
 td:nth-child(odd) {
   font-size: 18px;
   font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
 }
 
 td {
   line-height: 1.4rem;
   font-size: 16px;
+  padding-top: 0.4rem;
+  padding-bottom: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
