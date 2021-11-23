@@ -1,15 +1,11 @@
 import React from "react";
-import { Provider } from "react-redux";
-import { Missions } from "./components/Missions";
-import store from "./Redux/configureStore";
 import './App.css';
+import Rockets from "./components/Rockets";
 
 function App() {
   return (
     <>
-      <Provider store={store}>
-        <Missions />
-      </Provider>
+        <Rockets />
     </>
   );
 }
