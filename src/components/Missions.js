@@ -18,7 +18,7 @@ const displayMissions = (missionTab, dispatch) => {
           <p className={missions[i].reserved ? 'active' : 'inactive'}>{missions[i].reserved ? 'Active Member' : 'Not A MEMBER'}</p>
         </td>
         <td>
-          <button id={missions[i].mission_id} className={missions[i].reserved ? 'red' : 'join'} onClick={() => dispatch(reserved(missions[i].mission_id))} id={missions[i].mission_id} type="button">{missions[i].reserved ? 'Leave Mission' : 'Join Mission'}</button>
+          <button id={missions[i].mission_id} className={missions[i].reserved ? 'red' : 'join'} onClick={() => dispatch(reserved(missions[i].mission_id))} type="button">{missions[i].reserved ? 'Leave Mission' : 'Join Mission'}</button>
         </td>
       </tr>,
     );
@@ -33,7 +33,7 @@ export const Missions = () => {
     if (missions.missions.length === 0) {
         dispatch(fetchApiData());
     }
-  }, [dispatch]);
+  }, [dispatch, missions.missions.length]);
   return (
     <div>
       <table>
