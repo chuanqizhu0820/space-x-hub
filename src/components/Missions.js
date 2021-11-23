@@ -15,7 +15,7 @@ const displayMissions = (missionTab, dispatch) => {
           { missions[i].description }
         </td>
         <td>
-          <p className={missions[i].reserved ? 'active' : 'inactive'}>{missions[i].reserved ? 'Active Member' : 'Not A MEMBER'}</p>
+          <p className={missions[i].reserved ? 'active' : 'inactive'}>{missions[i].reserved ? 'Active Member' : 'Not A Member'}</p>
         </td>
         <td>
           <button id={missions[i].mission_id} className={missions[i].reserved ? 'red' : 'join'} onClick={() => dispatch(reserved(missions[i].mission_id))} type="button">{missions[i].reserved ? 'Leave Mission' : 'Join Mission'}</button>
@@ -35,14 +35,14 @@ export const Missions = () => {
     }
   }, [dispatch, missions.missions.length]);
   return (
-    <div>
+    <div className="container">
       <table>
         <thead>
           <tr>
             <th className="mission">Missions</th>
             <th className="description">Description</th>
             <th className="status">Status</th>
-            <th></th>
+            <th className="empty"></th>
           </tr>
         </thead>
         <tbody>
