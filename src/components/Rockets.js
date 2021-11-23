@@ -1,23 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelRocket, loadRockets} from '../Redux/rockets/Rockets';
 
 export default function Rockets(){
     const dispatch = useDispatch();
-    const [rocketData, setRocketData] = useState([]);
     useEffect( ()=> {
         fetch("https://api.spacexdata.com/v3/rockets")
         .then(response => response.json())
         .then(data => {
             for (const item of data){
                 item.reserved = false;
-            }
-            console.log("data id fetch and stored")
-            dispatch(loadRockets({info: data}));
-            setRocketData(data)
-        });
-    }, [])
+            };
+            dispatch(loadRockets({info: data}))
+        }, 
+        error => console.log(error));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     const rockInfo = useSelector(state => state.rockets);
     return (

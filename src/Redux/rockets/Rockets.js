@@ -15,7 +15,6 @@ const rocketReducer = (state=[], action) => {
     switch (action.type) {
     case 'RESERVE_ROCKET':
         let data = [...state];
-        console.log("reserved!")
         for (const item of data){
             if (item.id === action.payload.id){
                 item.reserved = true
@@ -24,16 +23,13 @@ const rocketReducer = (state=[], action) => {
       return [...data];
     case 'CANCEL_ROCKET':
         let data2 = [...state];
-        console.log("reserved!")
         for (const item of data2){
             if (item.id === action.payload.id){
                 item.reserved = false;
             }
         }
       return [...data2];
-      return [...state ];
     case 'LOAD_ROCKETS':
-        console.log("data is loaded")
       return [ ...state, ...action.payload.info];
     default:
       return state;
