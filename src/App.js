@@ -14,22 +14,25 @@ function App() {
     <>
       <Provider store={store}>
     <Router>
-      <div className="header">
-        <div>
+      <div className="header row align-items-center">
+        <div className="col-1 offset-1">
           <img src={planet} alt="Planet"></img>
         </div>
-        <div>
+        <div className="col-3">
         <h1>Space Traveler's Hub</h1>
         </div>
-      <div>
-        <Link to="/rockets">Rockets</Link>
-      </div>
-      <div>
-        <Link to="/missions">Missions</Link>
-      </div>
-      <div>
-        <Link to="/profile">My Profile</Link>
-      </div>
+        <div className="col-6 d-flex flex-row justify-content-end align-items-center">
+          <div>
+          <Link to="/rockets" className="links">Rockets</Link>
+          </div>
+          <div>
+          <Link to="/missions" className="links">Missions</Link>
+          </div>
+          <div>
+          <Link to="/profile" className="links">My Profile</Link>
+          </div>
+        </div>
+
       </div>
 
       <hr />
