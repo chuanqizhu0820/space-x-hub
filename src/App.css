@@ -109,8 +109,38 @@ button:hover {
   text-decoration: none;
   color:#186ace;
   padding-left:15px;
+  background-color: #fff;
+  border: none;
+}
+
+.links:hover {
+  text-decoration: underline;
+  background-color: #fff;
+  border: none;
+}
+
+.active {
+  text-decoration: underline;
+  background-color: #fff;
+  border: none;
+}
+
+h1 {
+  font-size: 33px;
 }
 
 img {
   width: 100%;
 }
+
+.line {
+  width: 0.125rem;
+  height: 1.5rem;
+  margin-left: 15px;
+  border-left: solid 1px black;
+  padding: 0;
+}
+
+/* div {
+  margin-top: 2rem;
+} */
