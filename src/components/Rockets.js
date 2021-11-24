@@ -19,8 +19,8 @@ export default function Rockets(){
                     <h3>{item.rocket_name}</h3>
                 </div>
 
-                <div>
-                    <p style={{fontSize: '18px'}}>{item.description}</p>
+                <div> 
+                    <p style={{fontSize: '18px'}}>{item.reserved ? <span style={{background:'#186ace', color:'white', padding:'2px 4px 2px 4px', marginRight:'5px', borderRadius: '3px'}}>reserved</span> : <span></span>}{item.description}</p>
                 </div>
 
                 <div>
