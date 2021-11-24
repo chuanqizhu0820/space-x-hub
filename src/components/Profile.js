@@ -1,5 +1,8 @@
+import React from "react"
+import { MyProfile } from "./MyProfile"
+
 export function Profile(){
     return (
-        <h1>this is the profile page</h1>
+        <MyProfile />
     )
 }

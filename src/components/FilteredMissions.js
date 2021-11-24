@@ -18,11 +18,13 @@ const filteredMissions = (missionTab = []) => {
 export const ReservedMissions = () => {
   const missions = useSelector((state) => state.missions);
   return (
-    <table id="missions">
-      <caption>My Missions</caption>
-      <tbody>
-        { filteredMissions(missions) }
-      </tbody>
-    </table>
+    <div className="table">
+      <h1>My Missions</h1>
+      <table id="missions">
+        <tbody>
+          { filteredMissions(missions) }
+        </tbody>
+      </table>
+    </div>
   );
 }

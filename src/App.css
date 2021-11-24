@@ -137,6 +137,11 @@ img {
   padding: 0;
 }
 
-/* div {
-  margin-top: 2rem;
-} */
+.table {
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+
+#missions {
+  width: 36%;
+}
