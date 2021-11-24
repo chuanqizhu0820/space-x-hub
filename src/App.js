@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Missions } from "./components/Missions";
 import Rockets from "./components/Rockets";
 import { Profile } from "./components/Profile";
+import planet from './images/planet.png'
 
 
 function App() {
@@ -13,6 +14,13 @@ function App() {
     <>
       <Provider store={store}>
     <Router>
+      <div className="header">
+        <div>
+          <img src={planet} alt="Planet"></img>
+        </div>
+        <div>
+        <h1>Space Traveler's Hub</h1>
+        </div>
       <div>
         <Link to="/rockets">Rockets</Link>
       </div>
@@ -21,6 +29,7 @@ function App() {
       </div>
       <div>
         <Link to="/profile">My Profile</Link>
+      </div>
       </div>
 
       <hr />
