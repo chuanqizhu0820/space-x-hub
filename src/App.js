@@ -1,5 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { MyProfile } from "./components/MyProfile";
 import './App.css';
 import store from './Redux/configureStore';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
