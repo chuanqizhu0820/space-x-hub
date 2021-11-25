@@ -8,7 +8,7 @@ Chuanqi Zhu
 
 ### **Student B**
 
-Alexander Mayowa
+Stephenia Ugboaja Uchechi
 
 ## Built With
 
