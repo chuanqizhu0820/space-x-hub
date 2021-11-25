@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+## Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A website in which customers can reserve rockets and mission of space-X
+
+### **Student A**
+
+Chuanqi Zhu
+
+### **Student B**
+
+Alexander Mayowa
+
+## Built With
+
+React
+Redux
 
 ## Available Scripts
 
