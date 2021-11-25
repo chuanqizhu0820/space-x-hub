@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux";
+import React from "react"
+import { MyProfile } from "./MyProfile"
 
 export function Profile(){
     const rockInfo = useSelector(state=>state.rockets);
@@ -6,7 +8,7 @@ export function Profile(){
     return (
         <div className='row'>
         <div className='col-5 offset-1'>
-        <h1>My Missions</h1>
+         <MyProfile />
         </div>
         <div className='col-5'>
         <h1>My Rockets</h1>
