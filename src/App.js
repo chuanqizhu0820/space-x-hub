@@ -18,13 +18,10 @@ function App() {
     fetch('https://api.spacexdata.com/v3/rockets')
       .then((response) => response.json())
       .then((data) => {
-        for (const item of data) {
-          item.reserved = false;
-        }
-        dispatch(loadRockets({ info: data }));
-      },
-      (error) => console.log(error));
-    // eslint-disable-next-line
+        // eslint-disable-next-line
+        const data2 = data.map((item) => { item.reserved = false; return item; });
+        dispatch(loadRockets({ info: data2 }));
+      });
   }, []);
 
   return (

@@ -11,23 +11,24 @@ export const loadRockets = (payload) => ({
 });
 
 const rocketReducer = (state = [], action) => {
+  let data = [];
   switch (action.type) {
     case 'RESERVE_ROCKET':
-      const data = [...state];
-      for (const item of data) {
-        if (item.id === action.payload.id) {
-          item.reserved = true;
-        }
-      }
-      return [...data];
+      data = [...state];
+      return [...data.map((item) => {
+        // eslint-disable-next-line
+        if (item.id === action.payload.id) { item.reserved = true; }
+        return item;
+      })];
+
     case 'CANCEL_ROCKET':
-      const data2 = [...state];
-      for (const item of data2) {
-        if (item.id === action.payload.id) {
-          item.reserved = false;
-        }
-      }
-      return [...data2];
+      data = [...state];
+      return [...data.map((item) => {
+        // eslint-disable-next-line
+        if (item.id === action.payload.id) { item.reserved = false; }
+        return item;
+      })];
+
     case 'LOAD_ROCKETS':
       return [...action.payload.info];
     default:
