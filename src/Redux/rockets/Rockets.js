@@ -30,7 +30,7 @@ const rocketReducer = (state=[], action) => {
         }
       return [...data2];
     case 'LOAD_ROCKETS':
-      return [ ...state, ...action.payload.info];
+      return [...action.payload.info];
     default:
       return state;
   }
