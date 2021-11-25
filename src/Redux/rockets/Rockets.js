@@ -16,16 +16,14 @@ const rocketReducer = (state = [], action) => {
     case 'RESERVE_ROCKET':
       data = [...state];
       return [...data.map((item) => {
-        // eslint-disable-next-line
-        if (item.id === action.payload.id) { item.reserved = true; }
+        if (item.id === action.payload.id) { return { ...item, reserved: true }; }
         return item;
       })];
 
     case 'CANCEL_ROCKET':
       data = [...state];
       return [...data.map((item) => {
-        // eslint-disable-next-line
-        if (item.id === action.payload.id) { item.reserved = false; }
+        if (item.id === action.payload.id) { return { ...item, reserved: false }; }
         return item;
       })];
 

@@ -39,7 +39,14 @@ function Profile() {
                 </p>
               );
             }
-            return (<p key={count} />);
+            return (
+              <p
+                key={count}
+                style={{
+                  margin: '0',
+                }}
+              />
+            );
           }))}
         </div>
       </div>
