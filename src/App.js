@@ -23,7 +23,7 @@ function App() {
         </div>
         <div className="col-6 d-flex flex-row justify-content-end align-items-center">
           <div>
-          <NavLink to="/rockets" activeClassName="active" className="links">Rockets</NavLink>
+          <NavLink to="/" activeClassName="active" className="links">Rockets</NavLink>
           </div>
           <div>
           <NavLink to="/missions" activeClassName="active" className="links">Missions</NavLink>
@@ -40,7 +40,7 @@ function App() {
       <hr />
 
       <Switch>
-        <Route exact path="/rockets">
+        <Route exact path="/">
           <Rockets />
         </Route>
         <Route path="/missions">
