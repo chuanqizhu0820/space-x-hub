@@ -5,7 +5,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #e1e5e8;
   border-collapse: collapse;
 }
@@ -39,6 +41,15 @@ th {
   padding-right: 4rem;
 }
 
+td {
+  line-height: 1.4rem;
+  font-size: 15px;
+  padding-top: 0.4rem;
+  padding-bottom: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
 td:first-child {
   font-size: 18px;
   font-weight: 700;
@@ -68,15 +79,6 @@ tr:nth-child(odd) {
   border-radius: 3px;
 }
 
-td {
-  line-height: 1.4rem;
-  font-size: 15px;
-  padding-top: 0.4rem;
-  padding-bottom: 2rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-
 .join {
   padding: 0.4rem;
   margin-left: 1rem;
@@ -100,11 +102,11 @@ button:hover {
   padding-right: 8.5rem;
 }
 
-.links{
+.links {
   font-size: 25px;
   text-decoration: none;
-  color:#186ace;
-  padding-left:15px;
+  color: #186ace;
+  padding-left: 15px;
   background-color: #fff;
   border: none;
 }
@@ -136,7 +138,6 @@ img {
   border-left: solid 1px black;
   padding: 0;
 }
-
 
 #missions {
   width: 92%;

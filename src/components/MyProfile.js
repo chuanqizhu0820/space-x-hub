@@ -1,12 +1,12 @@
-import React from "react";
-import { ReservedMissions } from "./FilteredMissions";
+import React from 'react';
+import ReservedMissions from './FilteredMissions';
 
-export const MyProfile = () => {
-  return (
-    <section>
-      <div>
-       <ReservedMissions />
-      </div>
-    </section>
-  )
-}
+const MyProfile = () => (
+  <section>
+    <div>
+      <ReservedMissions />
+    </div>
+  </section>
+);
+
+export default MyProfile;

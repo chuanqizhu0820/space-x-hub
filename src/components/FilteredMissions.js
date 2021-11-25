@@ -1,11 +1,11 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const filteredMissions = (missionTab = []) => {
   const { missions } = missionTab;
   const filterMissions = missions.filter((mission) => mission.reserved === true);
   const tab = [];
-  for (let i = 0; i < filterMissions.length; i +=1) {
+  for (let i = 0; i < filterMissions.length; i += 1) {
     tab.push(
       <tr key={i}>
         <td>{filterMissions[i].mission_name}</td>
@@ -15,7 +15,7 @@ const filteredMissions = (missionTab = []) => {
   return (tab);
 };
 
-export const ReservedMissions = () => {
+const ReservedMissions = () => {
   const missions = useSelector((state) => state.missions);
   return (
     <div className="table">
@@ -27,4 +27,6 @@ export const ReservedMissions = () => {
       </table>
     </div>
   );
-}
+};
+
+export default ReservedMissions;

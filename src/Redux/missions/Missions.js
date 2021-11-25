@@ -33,16 +33,13 @@ export function reserved(id) {
   return { type: RESERVED_MISSIONS, id };
 }
 
-export const loadMissions = (result) => {
-  return { type: LOAD_MISSIONS, missions: result };
-}
+export const loadMissions = (result) => ({ type: LOAD_MISSIONS, missions: result });
 
 export const fetchApiData = () => async (dispatch) => {
   try {
     const response = await fetch(baseUrl);
     const result = await response.json();
-    console.log('data', result);
-    dispatch(loadMissions(result))
+    dispatch(loadMissions(result));
   } catch (error) {
     dispatch(loadMissions({ missions: [] }));
   }

@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchApiData, reserved } from "../Redux/missions/Missions";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchApiData, reserved } from '../Redux/missions/Missions';
 
 const displayMissions = (missionTab, dispatch) => {
-  const { missions }  = missionTab;
+  const { missions } = missionTab;
   const tab = [];
   for (let i = 0; i < missions.length; i += 1) {
     tab.push(
@@ -26,12 +26,12 @@ const displayMissions = (missionTab, dispatch) => {
   return (tab);
 };
 
-export const Missions = () => {
+const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
   useEffect(() => {
     if (missions.missions.length === 0) {
-        dispatch(fetchApiData());
+      dispatch(fetchApiData());
     }
   }, [dispatch, missions.missions.length]);
   return (
@@ -42,7 +42,7 @@ export const Missions = () => {
             <th className="mission">Missions</th>
             <th className="description">Description</th>
             <th className="status">Status</th>
-            <th className="empty"></th>
+            <th aria-label="empty" className="empty" />
           </tr>
         </thead>
         <tbody>
@@ -50,5 +50,7 @@ export const Missions = () => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
+
+export default Missions;
