@@ -5,10 +5,14 @@ A website in which customers can reserve rockets and mission of space-X
 ### **Student A**
 
 Chuanqi Zhu
+https://github.com/chuanqizhu0820
+https://www.linkedin.com/in/chuanqi-zhu/
 
 ### **Student B**
 
 Stephenia Ugboaja Uchechi
+https://github.com/Ugboaja-Uchechi
+https://www.linkedin.com/in/stephanie-ugboaja-930a2a216/
 
 ## Built With
 
