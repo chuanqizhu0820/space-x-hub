@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table,
+th,
+td {
+  border: 1px solid #e1e5e8;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 70%;
+  margin: 3rem 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+tbody {
+  text-align: justify;
+}
+
+th {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mission {
+  width: 9%;
+  padding-right: 3.7rem;
+}
+
+.description {
+  width: 62%;
+  padding-right: 62rem;
+}
+
+.status {
+  padding-right: 4rem;
+}
+
+td {
+  line-height: 1.4rem;
+  font-size: 15px;
+  padding-top: 0.4rem;
+  padding-bottom: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+td:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.member {
+  font-size: 13px;
+  border: 1px solid #18a2b8;
+  background-color: #18a2b8;
+  color: #fff;
+  border-radius: 3px;
+  padding-left: 0.2rem;
+}
+
+.inactive {
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #6d757d;
+  padding-left: 0.3rem;
+  background-color: #6d757d;
   color: white;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.join {
+  padding: 0.4rem;
+  margin-left: 1rem;
+  font-size: 14px;
+  border: 1px solid #cacbcd;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red {
+  color: #eb8d97;
+  background-color: #fff;
+  border: 1px solid #eb8d97;
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.empty {
+  padding-right: 8.5rem;
+}
+
+.links {
+  font-size: 25px;
+  text-decoration: none;
+  color: #186ace;
+  padding-left: 15px;
+  background-color: #fff;
+  border: none;
+}
+
+.links:hover {
+  text-decoration: underline;
+  background-color: #fff;
+  border: none;
+}
+
+.active {
+  text-decoration: underline;
+  background-color: #fff;
+  border: none;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+img {
+  width: 100%;
+}
+
+.line {
+  width: 0.125rem;
+  height: 1.5rem;
+  margin-left: 15px;
+  border-left: solid 1px black;
+  padding: 0;
+}
+
+#missions {
+  width: 92%;
 }
